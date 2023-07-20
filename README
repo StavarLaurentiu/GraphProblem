@@ -1,0 +1,65 @@
+///////////////////////////////////////////////////////////////////////////////
+
+Tema 2 - Structuri de Date si Algoritmi - Stavar Laurentiu - 312CC
+
+• Punctaj checker local: 
+      
+      - Cerinta 1: 40p; 
+      - Cerinta 2: 40p;
+      - Valgrind: 20p;
+
+• Durata implementare: ~8h;
+
+• Descriere:
+
+    - Cerinta 1: a) Determina numarul zonelor despartite de apa din graf
+                  (numarul de componente conexe);
+                 b) Pentru fiecare zona despartita de ape, determina costul
+                  total minim al drumurilor ce ar trebui sa fie renovate
+                  (arborele de acoperire de cost minim) -> algoritmul lui 
+                  Prim;
+
+    - Cerinta 2: Se vor afisa pe patru randuri consecutive urmatoarele:
+                1) Pe prima linie se vor scrie toate nodurile care 
+                  constituie cel mai bun drum pentru a cara comoara de la 
+                  nodul insula la nodul corabie(drumul de la insula la 
+                  corabie de cost minim) -> se foloseste algoritmul lui 
+                  Dijkstra;
+                2) Pe a doua linie se va afisa costul total al drumului 
+                  -> suma costurilor muchiilor din drum;
+                3) Pe a treia linie se va afisa greutatea maxima pe care
+                  o poate avea barca pentru a trece pe traseul gasit -> 
+                  depthul maxim al nodurilor din drum;
+                4) Pe ultima linie se va afisa numărul de drumuri facute
+                pentru a cara intreaga comoara; 
+                  -> Greutatea comorii / Greutatea maxima;
+
+• Folosire:
+
+Programul primeste un argument de intrare:
+
+  - comanda (1 sau 2);
+
+• Compilare:
+  
+  -> make
+  -> make clean
+
+• Rulare:
+
+  ./tema3 1
+  ./tema3 2
+
+• Mesaj de eroare:
+
+  Usage ./tema3 [1 2]
+
+• Structuri de date folosite:
+
+  -> Graf -> Vector de Noduri;
+          -> Vetor de Liste de adiacenta;
+
+  -> Lista simplu inlantuita;
+  -> Vectori;
+
+///////////////////////////////////////////////////////////////////////////////
